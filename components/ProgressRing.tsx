@@ -45,11 +45,14 @@ const ProgressRing: React.FC<ProgressRingProps> = ({ radius, stroke, progress, l
           />
         </svg>
         <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <span className="text-3xl font-bold text-white leading-none">{Math.round(progress)}%</span>
-          <span className="text-[10px] uppercase tracking-wider text-emerald-500 font-semibold mt-1">Score</span>
+          <span className="text-4xl font-black text-white leading-none">{Math.round(progress)}%</span>
+          <span className="text-[12px] uppercase tracking-[0.2em] text-white/70 font-bold mt-2">score</span>
         </div>
       </div>
-      <p className="mt-4 text-slate-400 text-sm font-medium">{label}</p>
+      {/* Label under the circle */}
+      <p className="mt-6 text-white text-xl font-bold tracking-tight text-center">
+        {label}
+      </p>
     </div>
   );
 };

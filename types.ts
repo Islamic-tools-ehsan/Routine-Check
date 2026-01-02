@@ -56,6 +56,7 @@ export interface Translation {
   exercise: string;
   meditation: string;
   family: string;
+  dua: string;
   // Ethics (New Virtues)
   halal_sustenance: string;
   good_character: string;

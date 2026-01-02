@@ -22,13 +22,14 @@ export const ROUTINE_ITEMS: RoutineItem[] = [
   { id: 'waqiah', category: 'tilawat', labelKey: 'waqiah', variant: 'virtue' },
   { id: 'kahf', category: 'tilawat', labelKey: 'kahf', isFridayOnly: true, variant: 'virtue' },
   
-  // Character & Ethics (New Section)
+  // Character & Ethics
   { id: 'halal_sustenance', category: 'ethics', labelKey: 'halal_sustenance', variant: 'virtue' },
   { id: 'good_character', category: 'ethics', labelKey: 'good_character', variant: 'virtue' },
   { id: 'modesty', category: 'ethics', labelKey: 'modesty', variant: 'virtue' },
 
   // Habits
   { id: 'dhikr', category: 'habits', labelKey: 'dhikr', variant: 'virtue' },
+  { id: 'dua', category: 'habits', labelKey: 'dua', variant: 'virtue' },
   { id: 'exercise', category: 'habits', labelKey: 'exercise', variant: 'virtue' },
   { id: 'meditation', category: 'habits', labelKey: 'meditation', variant: 'virtue' },
   { id: 'family', category: 'habits', labelKey: 'family', variant: 'virtue' },
@@ -48,7 +49,7 @@ export const ROUTINE_ITEMS: RoutineItem[] = [
 export const TRANSLATIONS: Translations = {
   en: {
     title: 'Routine Check',
-    score_label: 'Score',
+    score_label: 'Individual Deen',
     salah_fardh: 'Five Daily Fardh',
     salah_nawafil: 'Voluntary Nawafil',
     tilawat: 'Daily Tilawat',
@@ -78,6 +79,7 @@ export const TRANSLATIONS: Translations = {
     waqiah: 'Surah Al-Waqi\'ah',
     kahf: 'Surah Al-Kahf',
     dhikr: 'Dhikr',
+    dua: 'Dua',
     exercise: 'Walk / Exercise',
     meditation: 'Meditation',
     family: 'Parents / Family Time',
@@ -96,7 +98,7 @@ export const TRANSLATIONS: Translations = {
   },
   ur: {
     title: 'روٹین چیک',
-    score_label: 'سکور',
+    score_label: 'انفرادی دین',
     salah_fardh: 'پانچ نمازیں',
     salah_nawafil: 'نوافل',
     tilawat: 'تلاوتِ قرآن',
@@ -126,6 +128,7 @@ export const TRANSLATIONS: Translations = {
     waqiah: 'سورہ الواقعہ',
     kahf: 'سورہ الکہف',
     dhikr: 'ذکر و اذکار',
+    dua: 'دعا',
     exercise: 'ورزش / واک',
     meditation: 'مراقبہ',
     family: 'والدین / گھر والوں کا وقت',
@@ -144,7 +147,7 @@ export const TRANSLATIONS: Translations = {
   },
   hi: {
     title: 'रूटिन चेक',
-    score_label: 'स्कोर',
+    score_label: 'व्यक्तिगत दीन',
     salah_fardh: 'पाँच फ़र्ज़ नमाज़ें',
     salah_nawafil: 'नवाफिल',
     tilawat: 'दैनिक तिलावत',
@@ -174,6 +177,7 @@ export const TRANSLATIONS: Translations = {
     waqiah: 'सूरह अल-वक़िआ',
     kahf: 'सूरह अल-कहफ़',
     dhikr: 'ज़िक्र',
+    dua: 'दुआ',
     exercise: 'व्यायाम / सैर',
     meditation: 'ध्यान (मेडिटेशन)',
     family: 'परिवार का समय',
@@ -192,7 +196,7 @@ export const TRANSLATIONS: Translations = {
   },
   ar: {
     title: 'مراجعة الروتين',
-    score_label: 'النتيجة',
+    score_label: 'الدين الفردي',
     salah_fardh: 'الصلوات الخمس',
     salah_nawafil: 'النوافل',
     tilawat: 'التلاوة اليومية',
@@ -222,6 +226,7 @@ export const TRANSLATIONS: Translations = {
     waqiah: 'سورة الواقعة',
     kahf: 'سورة الكهف',
     dhikr: 'الأذكار',
+    dua: 'الدعاء',
     exercise: 'الرياضة / المشي',
     meditation: 'التأمل',
     family: 'وقت العائلة / الوالدين',
