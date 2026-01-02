@@ -5,10 +5,10 @@ import { ROUTINE_ITEMS, TRANSLATIONS } from '../constants';
 import ProgressRing from './ProgressRing';
 import CheckItem from './CheckItem';
 
-const STORAGE_KEY = 'routine-hub-progress-v2';
-const NOTES_KEY = 'routine-hub-notes-v2';
-const DATE_KEY = 'routine-hub-date-v2';
-const HISTORY_KEY = 'routine-hub-history-v2';
+const STORAGE_KEY = 'routine-hub-progress-v3';
+const NOTES_KEY = 'routine-hub-notes-v3';
+const DATE_KEY = 'routine-hub-date-v3';
+const HISTORY_KEY = 'routine-hub-history-v3';
 
 const RoutineCheck: React.FC = () => {
   const [lang, setLang] = useState<Language>('en');
@@ -166,6 +166,7 @@ const RoutineCheck: React.FC = () => {
         {renderSection('salah_fardh', t.salah_fardh)}
         {renderSection('salah_nawafil', t.salah_nawafil)}
         {renderSection('tilawat', t.tilawat)}
+        {renderSection('ethics', t.ethics)}
         {renderSection('habits', t.habits)}
         {renderSection('avoidance', t.avoidance)}
       </div>

@@ -3,7 +3,7 @@ export type Language = 'en' | 'ur' | 'hi' | 'ar';
 
 export interface RoutineItem {
   id: string;
-  category: 'salah_fardh' | 'salah_nawafil' | 'tilawat' | 'habits' | 'avoidance';
+  category: 'salah_fardh' | 'salah_nawafil' | 'tilawat' | 'habits' | 'avoidance' | 'ethics';
   labelKey: string;
   isFridayOnly?: boolean;
   variant?: 'virtue' | 'vice';
@@ -28,6 +28,7 @@ export interface Translation {
   tilawat: string;
   habits: string;
   avoidance: string;
+  ethics: string;
   reset_confirm: string;
   download_report: string;
   daily: string;
@@ -55,12 +56,20 @@ export interface Translation {
   exercise: string;
   meditation: string;
   family: string;
+  // Ethics (New Virtues)
+  halal_sustenance: string;
+  good_character: string;
+  modesty: string;
   // Vices
   backbiting: string;
   theft: string;
   bad_nazri: string;
   lying: string;
   anger: string;
+  vulgarity: string;
+  major_sins: string;
+  evil_thoughts: string;
+  against_sunnah: string;
 }
 
 export type Translations = Record<Language, Translation>;
